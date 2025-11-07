@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import CustomInput from './CustomInput';
 
-const LoginScreen = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+const LoginScreen: React.FC = () => {
+    const [email, setEmail] = useState<string>('');
+    const [password, setPassword] = useState<string>('');
+
+
+
+
+
 
     const handleLogin = () => {
+        if (!email || !password) {
+            Alert.alert('Eksik Bilgi', 'Lütfen e-posta ve şifre alanlarını doldurun.');
+            return;
+        }
+
         console.log('E-posta:', email);
         console.log('Şifre:', password);
+        Alert.alert('Giriş Başarılı', `Hoş geldiniz: ${email}`);
     };
+
 
     return (
         <View style={styles.container}>
@@ -36,7 +48,6 @@ const LoginScreen = () => {
     );
 };
 
-// Styles aynı kalacak...
 const styles = StyleSheet.create({
     container: {
         flex: 1,
