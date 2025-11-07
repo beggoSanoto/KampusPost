@@ -29,19 +29,11 @@ npx react-native run-android
 npx react-native run-ios
 
 
-## Ekran Görüntüleri
+##  Ekran Görüntüleri
 
 ### Ana Ekran
 
 ![Ana Ekran](src/EkranGoruntuleri/anaEkran.png)
-
-### Klasör Yapısı
-
-![Klasör Yapısı](src/EkranGoruntuleri/klasorYapisi.png)
-
-### Uygulama Açıldı
-
-![Uygulama Açıldı](src/EkranGoruntuleri/uygulamaAcildi.png)
 
 ### Giriş Ekranı
 
@@ -54,4 +46,13 @@ npx react-native run-ios
 ### Konsol Çıktısı
 
 ![Konsol Çıktısı](src/EkranGoruntuleri/konsolCiktisi.png)
+
+### Klasör Yapısı
+
+![Klasör Yapısı](src/EkranGoruntuleri/klasorYapisi.png)
+
+### Uygulama Açıldı
+
+![Uygulama Açıldı](src/EkranGoruntuleri/uygulamaAcildi.png)
+
 
